@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/backgroundcolor"
+    android:layout_height="match_parent"
+    tools:context=".search.Search"
+    tools:ignore="Overdraw">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/headercolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/contentdescription"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="#fff" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/search_edittext"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/img_password"
+                android:background="#0000"
+                android:fontFamily="@font/med"
+                android:hint="Search.."
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                tools:ignore="HardcodedText,SpUsage,TextFields"
+                android:textSize="25dp"
+                android:importantForAutofill="no" />
+
+            <ImageView
+                android:id="@+id/img_password"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:contentDescription="@string/contentdescription"
+                android:src="@drawable/ic_search"
+                app:tint="#fff" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="?attr/layoutcolor"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/userly"
+            android:text="Users"
+            android:textAllCaps="false"
+            android:fontFamily="@font/bold"
+            android:textColor="?attr/textcolor"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/users"
+                android:text="Users"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                tools:ignore="HardcodedText,SpUsage"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textcolor"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Post"
+            android:id="@+id/postly"
+            android:fontFamily="@font/bold"
+            android:textColor="?attr/textcolor"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/post"
+                android:textAllCaps="false"
+                android:text="Posts"
+                android:textSize="16dp"
+                tools:ignore="HardcodedText,SpUsage"
+                android:fontFamily="@font/bold"
+                android:textColor="?attr/textcolor"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:fontFamily="@font/bold"
+            android:id="@+id/groupsly"
+            android:textColor="?attr/textcolor"
+            android:text="Groups"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText">
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:fontFamily="@font/bold"
+                android:id="@+id/groups"
+                android:textColor="?attr/textcolor"
+                android:text="Groups"
+                android:textSize="16dp"
+                tools:ignore="HardcodedText,SpUsage"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminateOnly="true"
+            android:id="@+id/pg"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/users_rv"
+/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/posts_rv"
+        android:visibility="gone"
+       />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/groups_rv"
+/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

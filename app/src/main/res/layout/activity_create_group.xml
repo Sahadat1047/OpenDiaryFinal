@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundcolor"
+    tools:context=".groups.CreateGroup"
+    tools:ignore="Overdraw">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:background="?attr/headercolor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/contentdescription"
+            app:tint="#fff" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Create group"
+            android:fontFamily="@font/black"
+            android:textSize="24dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:textColor="?attr/headertextcolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_check"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/contentdescription"
+            app:tint="#fff" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pb"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?attr/layoutcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/profile_image"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_edit_edit"
+                android:contentDescription="@string/contentdescription" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="160dp"
+                android:id="@+id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/group"
+                android:layout_marginTop="12dp"
+                android:layout_height="160dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/profileLayout">
+
+            <RelativeLayout
+                android:id="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/layoutcolor">
+
+                <ImageView
+                    android:id="@+id/name_img"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_name_edit"
+                    android:contentDescription="@string/contentdescription" />
+
+                <EditText
+                    android:background="#0000"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/med"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:id="@+id/password"
+                    android:hint="Group Name *"
+                    android:inputType="textFilter|textVisiblePassword"
+                    android:textColor="?attr/textcolor"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="?attr/textcolor"
+                    android:layout_toEndOf="@+id/name_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAutofill="no" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/username_layout"
+                android:layout_below="@+id/name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/layoutcolor">
+
+                <ImageView
+                    android:id="@+id/username_img"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_username_edit"
+                    android:contentDescription="@string/contentdescription" />
+
+                <EditText
+                    android:background="#0000"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/med"
+                    android:id="@+id/username"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:digits="abcdefghijklmnopqrstuvwxyz1234567890._"
+                    android:hint="Group Username *"
+                    android:inputType="textFilter|textVisiblePassword"
+                    android:textColor="?attr/textcolor"
+                    android:maxLines="1"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="?attr/textcolor"
+                    android:layout_toEndOf="@+id/username_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAutofill="no" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bio_layout"
+                android:layout_below="@+id/username_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="?attr/layoutcolor">
+
+                <ImageView
+                    android:id="@+id/bio_img"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_info"
+                    android:contentDescription="@string/contentdescription" />
+
+                <EditText
+                    android:background="#0000"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/med"
+                    android:id="@+id/bio"
+                    android:hint="Group Bio"
+                    android:inputType="textMultiLine|textVisiblePassword"
+                    android:textColor="?attr/textcolor"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:maxLines="3"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="?attr/textcolor"
+                    android:layout_toEndOf="@+id/bio_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAutofill="no" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/web_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/bio_layout"
+                android:background="?attr/layoutcolor">
+
+                <ImageView
+                    android:id="@+id/web_img"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@drawable/ic_link"
+                    android:contentDescription="@string/contentdescription" />
+
+                <EditText
+                    android:background="#0000"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/med"
+                    android:id="@+id/link"
+                    android:hint="Link"
+                    android:inputType="textFilter|textVisiblePassword"
+                    android:textColor="?attr/textcolor"
+                    android:maxLines="1"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:layout_marginLeft="10dp"
+                    android:textColorHint="?attr/textcolor"
+                    android:layout_toEndOf="@+id/web_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAutofill="no" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textAllCaps="false"
+                android:background="@drawable/blue_btn_radius"
+                android:fontFamily="@font/bold"
+                android:text="Create Group"
+                android:textAlignment="center"
+                android:layout_marginRight="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_below="@+id/web_layout"
+                android:layout_marginTop="50dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                tools:ignore="HardcodedText,SpUsage"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</RelativeLayout>

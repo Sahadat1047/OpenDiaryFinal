@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="layoutcolor">#fff</item>
+        <item name="textcolor">#161F3D</item>
+        <item name="backgroundcolor">#F2F3FA</item>
+        <item name="selectedcolor">#0047ab</item>
+        <item name="defaultcolor">#7F0047AB</item>
+        <item name="headercolor">#0047ab</item>
+        <item name="headertextcolor">#fff</item>
+        <item name="message_sender">#fff</item>
+        <item name="message_rec">#161F3D</item>
+        <item name="like">#fff</item>
+        <item name="search">#003d92</item>
+        <item name="following">@color/colorPrimary</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="colorAccent">#929292</item>
+        <item name="textcolor">#fff</item>
+        <item name="backgroundcolor">#000</item>
+        <item name="layoutcolor">#212121</item>
+        <item name="like">#212121</item>
+        <item name="selectedcolor">#fff</item>
+        <item name="defaultcolor">#9C9C9C</item>
+        <item name="headercolor">#212121</item>
+        <item name="headertextcolor">#fff</item>
+        <item name="message_sender">#fff</item>
+        <item name="message_rec">#fff</item>
+        <item name="search">#000</item>
+        <item name="following">#fff</item>
+
+    </style>
+
+    <!-- Auth theme. -->
+    <style name="AuthTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">#fff</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">#fff</item> <!-- Whatever color you want-->
+    </style>
+
+
+</resources>

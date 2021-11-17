@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "330707763816",
+    "project_id": "open-diary-cf8b3",
+    "storage_bucket": "open-diary-cf8b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330707763816:android:1d7672c2873ded487d71dd",
+        "android_client_info": {
+          "package_name": "com.spacester.opendiaryp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330707763816-ump804b0b8gqhe6oq0afjkbdfkjkm86t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgMwJ5N6GDdA4JCWdpw_SuOHe6NPinYHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330707763816-ump804b0b8gqhe6oq0afjkbdfkjkm86t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenDiary</string> <!-- Change App name here -->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="native_ad_unit_id">ca-app-pub-1023931867110884/1665772678</string>  <!-- Paste Native Ad unit id here for admob -->
+    <string name="banner_ad_unit_id">ca-app-pub-1023931867110884/4344100428</string>  <!-- Paste Banner Ad unit id here for admob -->
+    <string name="contentdescription">contentDescription</string>
+    <string name="search">Search..</string>
+    <string name="finish">Finish</string>
+    <string name="username">Username</string>
+    <string name="hi">Hi</string>
+    <string name="almost_there_one_last_step">Almost there, one last step</string>
+    <string name="to_reset_your_password_enter_the_registered_email_a_link_will_be_sent_on_this_email_to_reset_your_password">To reset your password enter the registered email. A link will be sent on this email to reset your password</string>
+    <string name="send_email">Send Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_your_phone_number_with_country_code_a_otp_will_be_generated_on_this_number">Enter your phone number with country code, a OTP will be generated on this number</string>
+    <string name="eg_1xxxxxxxxxx">eg: +82xxxxxxxxxx</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="spacester">© OpenDiary</string>
+    <string name="phone_no">Phone no.</string>
+    <string name="email">Email</string>
+    <string name="sign_in_or_sign_up_with">Sign in or sign up with ?</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="proceed">Proceed</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="sign_up_to_continue">Sign up to continue</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="enter_the_otp_sent_on_your_number">Enter the OTP sent on your number</string>
+    <string name="enter_your_otp">Enter your OTP</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="resend_link_or_change_number">Resend link or change number</string>
+    <string name="todo">TODO</string>
+</resources>

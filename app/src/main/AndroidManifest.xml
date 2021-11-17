@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.spacester.opendiaryp">
+
+    <application
+        android:name="com.spacester.opendiaryp.MyApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.spacester.opendiaryp.groupSettings.GUsernameActivity" />
+        <activity android:name="com.spacester.opendiaryp.groupSettings.GnameActivity" />
+        <activity android:name="com.spacester.opendiaryp.groupSettings.gLinkActivity" />
+        <activity android:name="com.spacester.opendiaryp.groupSettings.GbioActivity" />
+        <activity android:name="com.spacester.opendiaryp.settings.UsernameActivity" />
+        <activity android:name="com.spacester.opendiaryp.notifications.NotificationScreen" />
+        <activity android:name="com.spacester.opendiaryp.settings.NameActivity" />
+        <activity android:name="com.spacester.opendiaryp.settings.LocationActivity" />
+        <activity android:name="com.spacester.opendiaryp.settings.LinkActivity" />
+        <activity android:name="com.spacester.opendiaryp.settings.BioActivity" />
+        <activity android:name="com.spacester.opendiaryp.Check" />
+        <activity
+            android:name="com.spacester.opendiaryp.menu.ChangeEmail"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.menu.ChangePassword"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.menu.Policy"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.post.Post"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.spacester.opendiaryp.user.MediaView" />
+        <activity
+            android:name="com.spacester.opendiaryp.user.StoryView"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.user.AddStory"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.menu.Saved"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.groupSettings.EditGroup"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.groups.GroupProfile"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.groups.AddParticipants"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.groups.GroupChat"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.groups.CreateGroup"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.groups.ShareGroupActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.post.PostLikedBy"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.shareChat.ShareChatActivity"
+            android:configChanges="orientation"
+            android:label="Add to chat"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spacester.opendiaryp.shareChat.ShareActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.user.MyFollowing"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.post.PostDetails"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.post.UpdatePost"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.user.FollowersList"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.user.UserProfile"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.search.Search"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.shareChat.Chat"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.menu.Menu"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.search.ProfileSearch"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.settings.EditProfile"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.spacester.opendiaryp.authPhone.Final"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.authPhone.VerifyOTP"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.authPhone.GenerateOTP"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.authEmail.ForgotPassword"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.authEmail.Finish"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.authEmail.SignUp"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.authEmail.SignIn"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.welcome.IntroLast"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.welcome.IntroActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name="com.spacester.opendiaryp.welcome.SplashScreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AuthTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spacester.opendiaryp.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1023931867110884~2484223842" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.spacester.opendiaryp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <service
+            android:name="com.spacester.opendiaryp.notifications.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

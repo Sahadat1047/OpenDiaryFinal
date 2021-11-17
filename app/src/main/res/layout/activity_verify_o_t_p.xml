@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".authPhone.VerifyOTP"
+    tools:ignore="Overdraw">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            tools:ignore="SpUsage"
+            android:fontFamily="@font/bungee"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="45dp"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/med"
+            android:text="Enter the OTP sent on your number"
+            tools:ignore="HardcodedText,SpUsage"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_username"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/contentdescription"
+            android:padding="10dp"
+            android:src="@drawable/ic_chat_wt" />
+
+
+        <EditText
+            android:background="#0000"
+            android:hint="Enter your OTP"
+            android:id="@+id/editText"
+            android:layout_marginEnd="10dp"
+            android:maxLines="1"
+            android:textColor="#fff"
+            android:inputType="number"
+            android:textColorHint="#fff"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText,SpUsage"
+            android:digits="0123456789"
+            android:maxLength="6"
+            android:fontFamily="@font/med"
+            android:layout_toEndOf="@+id/img_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/white_btn_round"
+        android:drawableEnd="@drawable/ic_next"
+        android:fontFamily="@font/bold"
+        android:textAllCaps="false"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:stateListAnimator="@null"
+        android:text="Verify OTP"
+        android:textAlignment="textStart"
+        android:textColor="#0047ab"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout11"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:fontFamily="@font/med"
+        android:text="Resend link or change number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <ProgressBar
+        android:id="@+id/progressBar7"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
