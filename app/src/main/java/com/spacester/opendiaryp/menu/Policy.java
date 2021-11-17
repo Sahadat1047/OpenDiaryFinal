@@ -44,15 +44,9 @@ public class Policy extends AppCompatActivity {
                         "                  policies with the collection, use, and disclosure of Personal\n" +
                         "                  Information if anyone decided to use our Service.\n" +
                         "                </p> <p>\n" +
-                        "                  If you choose to use our Service, then you agree to\n" +
-                        "                  the collection and use of information in relation to this\n" +
-                        "                  policy. The Personal Information that we collect is\n" +
-                        "                  used for providing and improving the Service. We will not use or share your information with\n" +
-                        "                  anyone except as described in this Privacy Policy.\n" +
-                        "                </p> <p>\n" +
                         "                  The terms used in this Privacy Policy have the same meanings\n" +
                         "                  as in our Terms and Conditions, which is accessible at\n" +
-                        "                  Memespace unless otherwise defined in this Privacy Policy.\n" +
+                        "                  OpenDiary unless otherwise defined in this Privacy Policy.\n" +
                         "                </p> <p><strong>Information Collection and Use</strong></p> <p>\n" +
                         "                  For a better experience, while using our Service, we\n" +
                         "                  may require you to provide us with certain personally\n" +
