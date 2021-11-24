@@ -138,6 +138,10 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.spacester.opendiaryp.user.Library"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.spacester.opendiaryp.shareChat.Chat"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />

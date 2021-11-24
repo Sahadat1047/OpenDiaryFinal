@@ -22,6 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.spacester.opendiaryp.R;
 import com.spacester.opendiaryp.SharedPref;
+import com.spacester.opendiaryp.user.FollowersList;
+import com.spacester.opendiaryp.user.Library;
 import com.spacester.opendiaryp.user.MyFollowing;
 import com.spacester.opendiaryp.welcome.IntroLast;
 import com.tapadoo.alerter.Alerter;
@@ -74,12 +76,8 @@ public class Menu extends AppCompatActivity {
             startActivity(intent);
         });
         invite.setOnClickListener(v -> {
-            String shareBody = "OpenDiary - Free Story Sharing App" + " Download now on play store \nhttps://play.google.com/store/apps/details?id=com.spacester.myfriends";
-            Intent intent = new Intent(Intent.ACTION_SEND);
-            intent.setType("text/*");
-            intent.putExtra(Intent.EXTRA_SUBJECT,"Subject Here");
-            intent.putExtra(Intent.EXTRA_TEXT,shareBody);
-            startActivity(Intent.createChooser(intent, "Share Via"));
+            Intent intent = new Intent(Menu.this, Library.class);
+            startActivity(intent);
         });
         if (sharedPref.loadNightModeState()){
             aSwitch.setChecked(true);

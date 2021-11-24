@@ -318,13 +318,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/med"
-                    android:text="Invite friend"
+                    android:text="Open Library"
                     android:textColor="?attr/textcolor"
                     android:textSize="20dp"
-                    tools:ignore="HardcodedText,SpUsage"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView79"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText,SpUsage" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

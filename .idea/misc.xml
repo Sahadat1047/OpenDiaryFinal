@@ -9,8 +9,10 @@
         <entry key="app/src/main/res/drawable/ic_bell.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/drawable/ic_five.xml" value="0.10462962962962963" />
         <entry key="app/src/main/res/layout-v21/activity_final.xml" value="0.24139492753623187" />
+        <entry key="app/src/main/res/layout-v21/activity_finish.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout-v21/activity_forgot_password.xml" value="0.24139492753623187" />
-        <entry key="app/src/main/res/layout-v21/activity_generate_o_t_p.xml" value="0.10989583333333333" />
+        <entry key="app/src/main/res/layout-v21/activity_generate_o_t_p.xml" value="0.25" />
+        <entry key="app/src/main/res/layout-v21/activity_intro_last.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout-v21/activity_verify_o_t_p.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/activity_add_participants.xml" value="0.24139492753623187" />
         <entry key="app/src/main/res/layout/activity_add_story.xml" value="0.24139492753623187" />
@@ -26,11 +28,15 @@
         <entry key="app/src/main/res/layout/activity_followers_list.xml" value="0.24139492753623187" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.24139492753623187" />
         <entry key="app/src/main/res/layout/activity_generate_o_t_p.xml" value="0.24139492753623187" />
+        <entry key="app/src/main/res/layout/activity_group_chat.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_group_profile.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_intro.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_intro_last.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_library.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/activity_media_view.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.23143115942028986" />
+        <entry key="app/src/main/res/layout/activity_my_following.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_notification_screen.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/activity_policy.xml" value="0.23143115942028986" />
         <entry key="app/src/main/res/layout/activity_post.xml" value="0.23143115942028986" />

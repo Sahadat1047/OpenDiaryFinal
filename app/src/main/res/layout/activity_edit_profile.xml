@@ -297,14 +297,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/bold"
-            android:textSize="20dp"
-            tools:ignore="HardcodedText,SpUsage"
+            android:text="©OpenDiary"
             android:textColor="?attr/textcolor"
-            android:text="©Spacester"
+            android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            tools:ignore="HardcodedText,SpUsage" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.gms.ads.AdView
