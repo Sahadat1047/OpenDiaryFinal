@@ -120,16 +120,16 @@
             tools:ignore="HardcodedText">
 
             <TextView
-                android:layout_centerInParent="true"
-                android:layout_width="wrap_content"
                 android:id="@+id/post"
-                android:textAllCaps="false"
-                android:text="Posts"
-                android:textSize="16dp"
-                tools:ignore="HardcodedText,SpUsage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
                 android:fontFamily="@font/bold"
+                android:text="Story"
+                android:textAllCaps="false"
                 android:textColor="?attr/textcolor"
-                android:layout_height="wrap_content" />
+                android:textSize="16dp"
+                tools:ignore="HardcodedText,SpUsage" />
 
 
         </RelativeLayout>

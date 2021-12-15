@@ -48,7 +48,7 @@
         android:maxLines="1"
         tools:ignore="HardcodedText,SpUsage"
         android:ellipsize="end"
-        android:text="Add story"
+        android:text="Add Day"
         android:textSize="15sp"
         android:layout_gravity="center"
         android:layout_marginBottom="8dp"

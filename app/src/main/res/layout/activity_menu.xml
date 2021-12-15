@@ -101,13 +101,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:fontFamily="@font/med"
-                    android:text="Saved Post"
-                    tools:ignore="HardcodedText,SpUsage"
+                    android:text="saved"
                     android:textColor="?attr/textcolor"
                     android:textSize="20dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView9"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="HardcodedText,SpUsage" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
